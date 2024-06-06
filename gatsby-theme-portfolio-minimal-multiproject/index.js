@@ -7,5 +7,7 @@ export { InterestsSection } from './src/sections/Interests';
 export { ProjectsSection } from './src/sections/Projects';
 export { ContactSection } from './src/sections/Contact';
 export { LegalSection } from './src/sections/Legal';
+export { LecturesSection } from './src/sections/Lectures';
+export { PapersSection } from './src/sections/Papers';
 export { Section } from './src/components/Section';
 export { Animation } from './src/components/Animation';

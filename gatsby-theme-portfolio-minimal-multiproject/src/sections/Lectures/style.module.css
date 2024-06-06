@@ -1,0 +1,20 @@
+.Lectures {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+}
+
+.MoreLectures {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .Lectures {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .MoreLectures {
+        margin-top: 0;
+    }
+}

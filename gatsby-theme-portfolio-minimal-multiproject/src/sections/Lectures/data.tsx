@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { Project } from '../../components/Project';
+import { Lecture } from '../../components/Lecture';
 
-interface ProjectsSectionQueryResult {
+interface LecturesSectionQueryResult {
     allFile: {
-        projectFiles: {
+        lectureFiles: {
             name: string;
             relativePath: string;
             section: {
@@ -12,27 +12,27 @@ interface ProjectsSectionQueryResult {
                     url: string;
                     visible: boolean;
                 };
-                projects: Project[];
+                lectures: Lecture[];
             }[];
         }[];
     };
 }
 
-export const useLocalDataSource = (): ProjectsSectionQueryResult => {
+export const useLocalDataSource = (): LecturesSectionQueryResult => {
     return useStaticQuery(graphql`
-        query ProjectsByFilename {
-            allFile(filter: { childProjectsJson: { id: { ne: null } } }) {
-                projectFiles: nodes {
+        query LecturesByFilename {
+            allFile(filter: { childLecturesJson: { id: { ne: null } } }) {
+                lectureFiles: nodes {
                     name
                     relativePath
                     section: children {
-                        ... on ProjectsJson {
+                        ... on LecturesJson {
                             button {
                                 label
                                 url
                                 visible
                             }
-                            projects {
+                            lectures {
                                 category
                                 description
                                 image {
@@ -43,7 +43,6 @@ export const useLocalDataSource = (): ProjectsSectionQueryResult => {
                                             gatsbyImageData(width: 400)
                                         }
                                     }
-                                    objectFit
                                 }
                                 links {
                                     type

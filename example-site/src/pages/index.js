@@ -5,10 +5,11 @@ import {
     ContactSection,
     HeroSection,
     InterestsSection,
+    LecturesSection,
     Page,
     ProjectsSection,
     Seo,
-} from 'gatsby-theme-portfolio-minimal';
+} from 'gatsby-theme-portfolio-minimal-multiproject';
 
 export default function IndexPage() {
     return (
@@ -21,6 +22,7 @@ export default function IndexPage() {
                 <InterestsSection sectionId="details" heading="Details" />
                 <ProjectsSection sectionId="features" heading="Built-in Features" />
                 <ContactSection sectionId="github" heading="Issues?" />
+                <LecturesSection sectionId="lectures" heading="mortacci" />
             </Page>
         </>
     );

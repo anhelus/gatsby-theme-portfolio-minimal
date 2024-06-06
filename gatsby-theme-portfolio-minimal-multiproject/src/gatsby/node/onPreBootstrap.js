@@ -40,6 +40,7 @@ const ContentFolder = {
     HeroSection: 'hero',
     InterestsSection: 'interests',
     LegalSection: 'legal',
+    LecturesSection: 'lectures',
     ProjectsSection: 'projects',
 };
 
@@ -54,6 +55,7 @@ function getContentDirectoryTree(root) {
         heroSection: path.join(root, ContentFolder.Sections, ContentFolder.HeroSection),
         interestsSection: path.join(root, ContentFolder.Sections, ContentFolder.InterestsSection),
         legalSection: path.join(root, ContentFolder.Sections, ContentFolder.LegalSection),
+        lecturesSection: path.join(root, ContentFolder.Sections, ContentFolder.LecturesSection),
         projectsSection: path.join(root, ContentFolder.Sections, ContentFolder.ProjectsSection),
     };
 }
@@ -77,6 +79,10 @@ function getExampleFiles(directory) {
         interestsSection: {
             destination: path.join(directory['interestsSection'], 'interests.json'),
             example: path.join(exampleDirectory['interestsSection'], 'interests.example.json'),
+        },
+        lecturesSection: {
+            destination: path.join(directory['lecturesSection'], 'lectures.json'),
+            example: path.join(exampleDirectory['lecturesSection'], 'lectures.example.json'),
         },
         projectsSection: {
             destination: path.join(directory['projectsSection'], 'projects.json'),

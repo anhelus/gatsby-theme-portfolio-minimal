@@ -1,0 +1,20 @@
+.Papers {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+}
+
+.MorePapers {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .Papers {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .MorePapers {
+        margin-top: 0;
+    }
+}
