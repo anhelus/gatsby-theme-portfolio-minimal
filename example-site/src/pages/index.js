@@ -9,7 +9,7 @@ import {
     Page,
     ProjectsSection,
     Seo,
-} from 'gatsby-theme-portfolio-minimal-multiproject';
+} from 'gatsby-theme-research-portfolio-minimal';
 
 export default function IndexPage() {
     return (

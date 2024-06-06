@@ -1,7 +1,7 @@
 module.exports = {
     plugins: [
         {
-            resolve: 'gatsby-theme-portfolio-minimal-multiproject',
+            resolve: 'gatsby-theme-research-portfolio-minimal',
             options: {
                 // siteUrl: "https://example.com", // Used for sitemap generation
                 manifestSettings: {

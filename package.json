@@ -1,9 +1,9 @@
 {
-    "name": "gatsby-theme-portfolio-minimal-multiproject",
+    "name": "gatsby-theme-research-portfolio-minimal",
     "private": true,
     "version": "0.1.0",
     "scripts": {
-        "test": "yarn workspace gatsby-theme-portfolio-minimal-multiproject test",
+        "test": "yarn workspace gatsby-theme-research-portfolio-minimal test",
         "clean": "yarn workspace example-site clean",
         "build": "yarn workspace example-site build",
         "develop": "yarn workspace example-site develop",
@@ -12,7 +12,7 @@
         "lint": "yarn workspaces run lint"
     },
     "workspaces": [
-        "gatsby-theme-portfolio-minimal-multiproject",
+        "gatsby-theme-research-portfolio-minimal",
         "example-site"
     ],
     "repository": {

@@ -1,8 +1,8 @@
 {
-    "name": "gatsby-theme-portfolio-minimal-multiproject",
+    "name": "gatsby-theme-research-portfolio-minimal",
     "version": "0.1.0",
     "license": "MIT",
-    "author": "Konstantin Münster <mail@konstantin.digital>",
+    "author": "Angelo Cardellicchio <mail@a.cardellicchio@gmail.com>",
     "main": "index.js",
     "scripts": {
         "build": "gatsby build",
