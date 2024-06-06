@@ -1,5 +1,6 @@
 {
     "private": true,
+    "version": "0.1.0",
     "scripts": {
         "test": "yarn workspace gatsby-theme-portfolio-minimal test",
         "clean": "yarn workspace example-site clean",
